@@ -146,7 +146,7 @@ class ConvNet(nn.Module):
         x = x.view(-1,512)
         x = F.relu(self.full1(x))
         x = F.relu(self.full2(x))
-        x = F.softmax(self.full3(x),dim=1)
+      
         
         return x
         
