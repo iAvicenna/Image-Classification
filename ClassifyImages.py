@@ -10,9 +10,6 @@
 # percent.                                                                     #                                                
 ################################################################################
 
-#Reset the workspace and import variables
-
-%reset -f 
 
 import torch
 from torch.autograd import Variable
