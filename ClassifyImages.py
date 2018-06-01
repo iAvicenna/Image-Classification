@@ -142,7 +142,7 @@ class ConvNet(nn.Module):
         #learning layers
         x = x.view(-1,512)
         x = F.relu(self.full1(x))
-        x = F.relu(self.full2(x))
+        x = self.full2(x)  #no relu here since we use crossentropyloss
       
         
         return x
